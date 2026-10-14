@@ -1,0 +1,1267 @@
+:root {
+  --AzulOscuro: #212b34;
+  --Dorado: #c29758;
+  --Crema: #faf7ee;
+  --GrisFrio: #dbdbdb;
+  --Gris: #929292;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  line-height: 1.2;
+  background-color: var(--GrisFrio);
+  /* overflow: hidden; */
+}
+
+.ancho {
+  max-width: 90%;
+  margin: auto;
+}
+
+.cont-header {
+  border-top: 4vh solid var(--Dorado);
+}
+
+.negritas {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  /* position: fixed; */
+  padding: 20px 0;
+  background-color: var(--AzulOscuro);
+}
+
+.flexB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexE {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 22%;
+  text-align: left;
+  color: var(--Crema);
+  justify-content: space-evenly;
+}
+
+.logo img {
+  width: 25%;
+}
+
+.logo a {
+  color: var(--Crema);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navegacion {
+  width: 55%;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.navegacion a {
+  padding: 0 0 5px 0;
+  color: var(--Crema);
+  text-decoration: none;
+}
+
+.mark {
+  border-bottom: 2px solid var(--Dorado);
+}
+
+.navegacion a:hover {
+  border-bottom: 2px solid var(--Dorado);
+}
+
+.links {
+  width: 70%;
+  margin: auto;
+}
+
+.sesion {
+  width: 22%;
+  text-align: right;
+}
+
+.sesion a {
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 10px 35px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--AzulOscuro);
+  text-transform: uppercase;
+  background-color: var(--Dorado);
+}
+
+.sesion a:hover {
+  color: white;
+  border: 2px solid var(--Dorado);
+  background-color: var(--AzulOscuro);
+}
+
+.hero {
+  display: flex;
+  height: 37.5rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/FondoHeroSombreado.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-family: "Lisu Bosa";
+  font-weight: 700;
+  font-size: 3.75rem;
+  margin-bottom: 30px;
+  color: var(--Crema);
+  text-transform: uppercase;
+}
+
+.hero a {
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 1.4375rem;
+  text-decoration: none;
+  color: var(--AzulOscuro);
+  background-color: var(--Dorado);
+}
+
+footer {
+  font-size: 1.25rem;
+  color: var(--Crema);
+  background-color: var(--AzulOscuro);
+  padding: 30px;
+}
+
+.parte2,
+.parte {
+  width: 33%;
+}
+
+.parte2 {
+  text-align: center;
+}
+
+.parte2 img {
+  width: 40px;
+}
+
+.fondoPart {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+  padding: 20px 30px;
+  background-color: var(--Crema);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.border {
+  border-right: 2px solid var(--GrisFrio);
+  border-left: 2px solid var(--GrisFrio);
+}
+
+.cardsVal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cardVal {
+  padding: 20px;
+}
+
+.cardVal h3 {
+  margin: 20px 0;
+}
+
+.cardVal img {
+  width: 50px;
+}
+
+.titleOfS {
+  margin-bottom: 30px;
+}
+
+.titleOfS img {
+  width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.cardOfS {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
+}
+
+.cardOfS:hover {
+  width: 24%;
+  border: 3px solid var(--Dorado);
+}
+
+.imgOfs {
+  width: 100%;
+}
+
+.imgOfs img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.txtOfs {
+  padding: 20px 10px;
+}
+
+.pais {
+  font-weight: bold;
+  color: var(--AzulOscuro);
+}
+
+.lados {
+  margin: 15px 0;
+}
+
+.flecha {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--AzulOscuro);
+}
+
+.detalles {
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: var(--Crema);
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: var(--AzulOscuro);
+}
+
+.incPaq {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.incPaq_lado {
+  width: 49%;
+}
+
+.incPaq_lado:first-child {
+  border: 1px solid var(--Dorado);
+}
+
+.incPaq_lado legend {
+  padding: 0 10px;
+}
+
+.incPaq_lado img {
+  width: 50px;
+}
+
+.incPaq_lado ul {
+  line-height: 3;
+  text-align: left;
+  margin: 20px 60px;
+}
+
+.incPaq_lado video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conLado {
+  width: 49%;
+  text-align: center;
+}
+
+.tituloCont {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+  font-family: "Lisu Bosa";
+}
+
+/* Estilos del Form */
+
+.card {
+  margin: auto;
+  background-color: var(--Crema);
+  border-radius: 10px;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.titleForm {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--AzulOscuro);
+}
+
+.formCont {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupoCont {
+  position: relative;
+}
+
+.formCont .grupoCont label {
+  font-size: 1rem;
+  color: var(--AzulOscuro);
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  background-color: var(--Crema);
+  transition: all 0.3s ease;
+}
+
+.formCont .grupoCont input,
+.formCont .grupoCont textarea {
+  padding: 1.25rem;
+  border-radius: 5px;
+  border: 1px solid var(--GrisFrio);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  color: var(--AzulOscuro);
+  background-color: transparent;
+}
+
+.formCont .grupoCont input:placeholder-shown + label,
+.formCont .grupoCont textarea:placeholder-shown + label {
+  top: 1.3125rem;
+  background-color: transparent;
+}
+
+.formCont .grupoCont input:focus,
+.formCont .grupoCont textarea:focus {
+  border-color: var(--Dorado);
+}
+
+.formCont .grupoCont input:focus + label,
+.formCont .grupoCont textarea:focus + label {
+  top: -0.375rem;
+  left: 10px;
+  background-color: var(--Crema);
+  color: var(--Dorado);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.formCont .grupoCont textarea {
+  resize: none;
+  height: 100px;
+}
+
+.formCont button {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  color: var(--AzulOscuro);
+  transition: all 0.3s ease;
+  background-color: var(--Dorado);
+}
+
+.formCont button:hover {
+  background-color: var(--AzulOscuro);
+  color: var(--Crema);
+}
+
+.tituloUbi {
+  margin-bottom: 20px;
+}
+
+.tituloUbi img {
+  width: 30px;
+}
+
+.conLado iframe {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.loginMain {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logForm {
+  width: 100%;
+  padding: 40px;
+  max-width: 500px;
+  border-radius: 12px;
+  background-color: var(--Crema);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.formTt {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: var(--AzulOscuro);
+  text-transform: uppercase;
+}
+
+.inptGroup {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inptGroup .lblF {
+  top: -16px;
+  left: 12px;
+  font-size: 12px;
+  position: absolute;
+  color: var(--Dorado);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.inptGroup input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: var(--AzulOscuro);
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.inptGroup input:focus {
+  border-color: var(--Dorado);
+  box-shadow: 0 0 10px rgba(188, 163, 88, 0.4);
+}
+
+.inptGroup input:focus + .lblF {
+  top: -20px;
+  font-size: 11px;
+  color: var(--Dorado);
+  opacity: 1;
+}
+
+.submit {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--Dorado);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #a37c40;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(188, 163, 88, 0.4);
+}
+
+.registrarLink {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--AzulOscuro);
+}
+
+.registrarLink a {
+  margin-left: 10px;
+  color: var(--Dorado);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.submit:last-child {
+  margin-top: 20px;
+  background-color: rgb(155, 1, 1);
+}
+
+.PanelAdmin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PanelAdmin h1 {
+  font-size: 50px;
+  font-family: "Lisu Bosa";
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.contOpt {
+  width: 40%;
+  margin: auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.CardPAd {
+  width: 70%;
+  margin: 0 auto 30px auto;
+}
+
+.cardPA {
+  text-decoration: none;
+}
+
+.cardP {
+  text-align: center;
+  width: 100%;
+  height: 230px;
+  background: var(--Dorado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+  overflow: hidden;
+}
+
+.cardP::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background-color: var(--AzulOscuro);
+  bottom: 0;
+  right: 0;
+  transform: translatey(70px);
+  border-radius: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.cardP2 {
+  text-align: center;
+  width: 100%;
+  height: 230px;
+  background: rgb(155, 1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+  overflow: hidden;
+}
+
+.cardP2::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background-color: var(--AzulOscuro);
+  bottom: 0;
+  right: 0;
+  transform: translatey(70px);
+  border-radius: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.cTxt {
+  z-index: 2;
+}
+
+.cTxt img {
+  width: 50px;
+}
+
+.cardP:hover::before {
+  transform: scale(7) translate(-20px);
+}
+
+.cardP:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--Crema);
+}
+
+.cardP2:hover::before {
+  transform: scale(7) translate(-20px);
+}
+
+.cardP2:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--Crema);
+}
+
+.CardPAd:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.CardPAd:last-child {
+  width: 40%;
+  grid-column: -3/-1;
+}
+
+.contSect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  width: 23%;
+}
+
+.main {
+  width: 76%;
+  margin: 2% 1.5%;
+}
+
+.navbarA {
+  width: 100%;
+  height: 100dvh;
+  text-align: center;
+  color: var(--Crema);
+  background-color: var(--AzulOscuro);
+}
+
+.encNb {
+  padding: 20px 10px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.encNb img {
+  width: 110px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.encNb h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.encNb h2 .lighter {
+  font-weight: 400;
+}
+
+.bdNb img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.bdNb a {
+  font-size: 20px;
+  display: flex;
+  color: var(--Crema);
+  align-items: center;
+  text-decoration: none;
+}
+
+.bdNb ul {
+  text-align: left;
+  list-style: none;
+}
+.bdNb li {
+  padding: 10px 0 10px 30px;
+  margin-bottom: 20px;
+}
+
+.bdNb li:hover {
+  border: 3px solid var(--Dorado);
+}
+
+.TitleModule {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Lisu Bosa";
+  color: var(--AzulOscuro);
+}
+
+.vInfPsAt {
+  padding: 20px;
+  background-color: var(--Crema);
+}
+
+.vInfPs100 {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--Crema);
+  margin-bottom: 30px;
+}
+
+.tablaInf h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+  color: var(--AzulOscuro);
+}
+
+.tablaInf {
+  font-family: sans-serif;
+  padding: 20px;
+  border-spacing: 0;
+  text-align: center;
+  background-color: var(--Crema);
+}
+
+.tablaInf th {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--AzulOscuro);
+  border-bottom: 2px solid var(--AzulOscuro);
+}
+
+.tablaInf td {
+  padding: 15px 20px;
+  color: var(--AzulOscuro);
+  border-bottom: 1px solid var(--AzulOscuro);
+}
+
+.tablaInf td img {
+  width: 30px;
+}
+
+.btn-add {
+  font-size: 18px;
+  color: var(--Crema);
+  padding: 10px 30px;
+  border: none;
+  background-color: var(--Dorado);
+  margin: 20px 30px;
+  border-radius: 5px;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.dispPs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fAdd {
+  display: none;
+}
+
+.fAdd fieldset {
+  padding: 20px;
+  text-align: right;
+  border: 2px dotted var(--Dorado);
+}
+
+.fAdd legend {
+  text-align: center;
+  padding: 10px;
+}
+
+.fAdd select,
+.fAdd input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--GrisFrio);
+  margin-bottom: 10px;
+}
+
+.fAdd fieldset input:focus {
+  border-color: var(--Dorado);
+}
+
+.fAdd textarea {
+  width: 100%;
+  resize: none;
+  height: 130px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--GrisFrio);
+}
+
+.Sect {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: var(--GrisFrio);
+}
+
+.Sect h3 {
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.inptGroup2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inptGroup2 input,
+.inptGroup2 select {
+  width: 49%;
+}
+
+.oferta {
+  display: none;
+}
+
+.viajes {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gridPaq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.gridPaq {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.paquete {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, border 0.3s;
+}
+
+.paquete:hover {
+  transform: translateY(-5px);
+}
+
+.paqueteOferta {
+  border: 2px dotted var(--Dorado);
+}
+
+.paqueteImg {
+  width: 100%;
+  height: 200px;
+}
+.paqueteImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paqueteInfo {
+  padding: 15px;
+  text-align: left;
+}
+
+.paqueteTitulo {
+  font-size: 1.5rem;
+  color: var(--AzulOscuro);
+  margin-bottom: 10px;
+  font-family: "Lisu Bosa";
+}
+
+.duracion {
+  font-size: 0.875rem;
+  color: var(--Gris);
+  margin-bottom: 10px;
+}
+
+.preciosDisplay {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.precioTachado {
+  text-decoration: line-through;
+  color: var(--Gris);
+  font-size: 1.0625rem;
+}
+
+.precioFinal {
+  font-size: 29px;
+  font-weight: bold;
+  color: var(--AzulOscuro);
+}
+
+.Resaltado {
+  color: var(--Dorado);
+}
+
+.btn-detalles {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-detalles:hover {
+  background-color: var(--Dorado);
+}
+
+.detallePaqueteMain {
+  margin: 30px 0;
+  background-color: var(--GrisFrio);
+}
+
+.heroDetalle {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alingTextD {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  background-color: #212b346b;
+}
+
+.TtDetalle {
+  font-size: 3rem;
+  color: white;
+  font-family: "Lisu Bosa";
+  margin-bottom: 10px;
+}
+
+.destPaq {
+  font-size: 1.1875rem;
+  color: white;
+}
+
+.infoReservaGrid {
+  padding: 30px 0;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.descPaq {
+  flex: 2;
+  padding: 40px;
+  background-color: var(--Crema);
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.descPaq h2,
+.descPaq h3 {
+  color: var(--AzulOscuro);
+  margin: 20px 0;
+}
+
+.duracionD {
+  font-weight: bold;
+  color: var(--Dorado);
+}
+
+.reservar {
+  flex: 1;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid var(--Dorado);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.reservarPrecios {
+  text-align: center;
+  margin: 0 0 0 20px;
+}
+
+.precioEtiqueta {
+  font-size: 1rem;
+  color: var(--AzulOscuro);
+}
+
+.precioTachadoG {
+  text-decoration: line-through;
+  color: var(--AzulOscuro);
+  font-size: 1.25rem;
+}
+
+.precioFinalG {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.btnReservar {
+  display: block;
+  padding: 15px 20px;
+  background-color: var(--AzulOscuro);
+  color: var(--Crema);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btnReservar:hover{
+  background-color: var(--Dorado);
+  color: var(--AzulOscuro);
+}
+
+.flexDest{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.partD{
+  width: 33%;
+  text-align: center;
+}
+
+.partD img{
+  width: 50px;
+}
+
+.labelMini{
+  font-size: 14px;
+  color: var(--AzulOscuro);
+}
+
+.TextM{
+  font-size: 25px;
+  color: var(--AzulOscuro);
+  font-weight: bold;
+}
+
+.card-container,
+.card-box,
+.card-head,
+.card-number-row,
+.card-details,
+.card-holder-col,
+.card-date-col {
+  display: flex;
+}
+.card-container {
+  align-items: center;
+  justify-content: center;
+}
+.card-box {
+  width: 340px;
+  min-height: 160px;
+  background: #fff;
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  margin: 16px;
+  padding: 1.5em;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.2em;
+}
+.card-head {
+  justify-content: space-between;
+  align-items: center;
+}
+.card-chip svg {
+  width: 32px;
+  height: 32px;
+}
+.card-chip svg path {
+  fill: #636363;
+}
+.card-logo svg {
+  width: 48px;
+  height: 48px;
+}
+.card-number-row {
+  justify-content: center;
+  word-spacing: 1em;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.card-number-row{
+  color: var(--AzulOscuro);
+}
+
+.card-box:hover .card-number-row {
+  font-size: 1.32em;
+}
+.card-details {
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.card-holder-col {
+  flex-direction: column;
+  gap: 2px;
+}
+.card-holder-title,
+.card-date-title {
+  color: var(--AzulOscuro);
+  font-size: 0.7em;
+}
+.card-holder-name {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--AzulOscuro);
+}
+.card-date-col {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+
+.cardReserva {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservaTitulo {
+    color: var(--AzulOscuro);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--GrisFrio);
+}
+
+.reservaFieldset {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid var(--GrisFrio);
+    border-radius: 5px;
+}
+
+.reservaFieldset legend {
+    color: var(--Dorado);
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.2em;
+}
+
+.groupReserva label,
+.reservaFieldset label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--AzulOscuro);
+    font-weight: 600;
+}
+
+.groupReserva input,
+#metodoPago,
+#comprobante {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.finalDisplay {
+    text-align: right;
+    margin-top: 20px;
+    border-top: 1px solid var(--GrisFrio);
+    padding-top: 15px;
+}
+
+.finalDisplay h2 {
+    color: var(--Dorado);
+}
+
+.alertaComp {
+    color: rgb(155, 1, 1);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.disenoTarjeta {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#seccionDeposito{
+  display: none;
+}
+
+#disenoTarjeta{
+  display: none;
+}
